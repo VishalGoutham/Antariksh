@@ -1,0 +1,502 @@
+/*----MOBLE MENU----*/
+.navbar-header{
+    position: relative;
+}
+#mobile-nav-open-btn{
+    font-size: 30px;
+    color: #f4c613;
+    cursor: pointer;
+    z-index: 2;
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    display: none;
+}
+#mobile-nav{
+    /*By default mobile menu will be hidden*/
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background-color: rgba(255,255,255,0.9);
+    -webkit-transition: all 300ms linear;
+    -o-transition:all 300ms linear;
+    transition: all 300ms linear;
+    overflow-y: hidden;
+}
+#mobile-nav-close-btn{
+    font-family: "Raleway",sans-serif;
+    font-size: 70px;
+    color: #212226;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -9px;
+    right: 18px ;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+#mobile-nav-content{
+    text-align: center;
+    width: 100%;
+    margin-top: 30px;
+    position: relative;
+    top: 0%;
+}
+#mobile-nav ul li{
+    margin-bottom: 20px;
+}
+#mobile-nav a{
+    font-family: "Raleway",sans-serif;
+    font-size: 18px;
+    color: #212226;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: inline;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+#mobile-nav a:hover,
+#mobile-nav a:focus,
+#mobile-nav-close-btn:hover,
+#mobile-nav-close-btn:focus{
+    color: #f4c613;
+    background: none;
+}
+/*SCROLL SPY*/
+.white-nav-top #mobile-nav ul.nav > li.active > a {
+    color: #f4c613;
+    font-weight: 500;
+}
+
+/*----BOOTSTRAP MEDIA QUERIES----*/
+
+/*--FOR LARGE DEVICES--*/
+
+@media(min-width: 1200px) and (max-width: 1299px) {
+    .site-nav-wrapper {
+        padding: 0 20px;
+    }
+}
+
+/*--MEDIUM DEVICES--*/
+@media (min-width : 992px) and (max-width: 1199px) {
+
+    /*NAVIGATION*/
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    .site-nav-wrapper .navbar-brand {
+        padding-left: 20px;
+    }
+
+    /*VERTICAL HEADINGS*/
+    .vertical-heading h2 {
+        font-size: 29px
+    }
+
+    /*SERVICE SECTION 2*/
+    #services-tabs .tab-bg {
+        padding: 16px 30px;
+        min-height: 300px;
+    }
+
+    .service-tab p {
+        line-height: 20px;
+    }
+
+    /*UNISEC*/
+    .pricing-table .type h4 {
+        font-size: 27px;
+    }
+}
+
+/*--SMALL DEVICES--*/
+@media (min-width : 768px) and (max-width: 991px) {
+
+    /*NAVIGATION*/
+    .site-nav-wrapper {
+        padding: 0;
+    }
+
+    /*BUTTONS*/
+    .btn-general {
+        padding: 15px 35px 15px 35px;
+        font-size: 12px;
+    }
+
+    .pricing-table .btn {
+        padding: 8px 30px 8px 30px;
+    }
+
+    .pricing-table .btn .rupee {
+        font-size: 15px;
+    }
+
+    /*VERTICAL HEADINGS*/
+    .vertical-heading h2 {
+        font-size: 29px
+    }
+
+    #services-01 .horizontal-heading h2 {
+        font-size: 35px;
+    }
+
+    #services-01 .horizontal-heading h2 span {
+        font-size: 45px;
+    }
+
+    #event-photos {
+        padding-top: 90px;
+    }
+
+    /*WORKSHOP TABS*/
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .r-tabs-state-active a {
+        color: #fff;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+
+    /*BLOG*/
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+}
+
+/*--EXTRA SMALL DEVICES--*/
+@media (max-width: 767px) {
+    /*NAVIGATION*/
+    .navbar{
+        padding: 20px 0;
+    }
+    .site-nav-wrapper, .white-nav-top{
+        padding: 0;
+    }
+    /*MOBILE MENU*/
+    #mobile-nav-open-btn{
+        display: block;
+    }
+    /*HOME*/
+    #home-heading-1 {
+        font-size: 25px;
+    }
+
+    #home-heading-2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    #home-text p {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 0 2px 30px 2px;
+    }
+
+    /*BUTTONS*/
+    .btn-general {
+        padding: 8px 25px 6px 25px;
+        font-size: 10px;
+    }
+
+    /*ABOUT*/
+    .content-box-lg {
+        padding: 90px 0;
+    }
+
+    /*VERTICAL HEADING*/
+    .vertical-heading {
+        text-align: center;
+    }
+
+    .vertical-heading h5 {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        display: block;
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 29px;
+        line-height: normal;
+        margin: 0;
+    }
+
+    #about-left {
+        margin-bottom: 50px;
+    }
+
+    #about-right {
+        text-align: center;
+    }
+
+    /*MISSION VISION*/
+    .content-box-md {
+        padding: 80px 0;
+    }
+
+    .about-item {
+        padding: 55px 30px;
+        margin-bottom: 25px;
+    }
+
+    .about-item i {
+        font-size: 30px;
+    }
+
+    .about-item h3 {
+        font-size: 18px;
+    }
+
+    /*TEAM*/
+    #team-left .vertical-heading {
+        min-height: 110px;
+    }
+
+    /*STATEMENT SECTION*/
+    #tech-statement h3 {
+        font-size: 20px;
+    }
+
+    #tech-statement p {
+        font-size: 15px;
+    }
+
+    /*EVENTS*/
+    /*HORIZONTAL HEADING*/
+    .horizontal-heading {
+        margin-bottom: 30px;
+    }
+
+    .horizontal-heading h2 {
+        font-size: 29px;
+    }
+
+    .horizontal-heading h2 span {
+        font-size: 35px;
+        padding-bottom: 0;
+    }
+
+    .horizontal-heading h5 {
+        font-size: 13px;
+    }
+
+    #event-photos img {
+        margin: 35px 0;
+    }
+
+    .service,
+    .service .icon {
+        text-align: center;
+    }
+
+    .service h4 {
+        font-size: 18px;
+    }
+
+    /*WORKSHOP TABS*/
+    .r-tabs-accordion-title {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .r-tabs-accordion-title a {
+        font-family: "Raleway", sans-serif;
+        font-size: 13px;
+        color: #212226;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 0;
+        text-decoration: none;
+    }
+
+    .r-tabs-state-active a {
+        color: #212226;
+        font-weight: 700;
+        border-bottom: 3px solid #f4c613;
+        padding-bottom: 5px;
+        -webkit-transition: border-color 300ms linear;
+        transition: border-color 300ms linear;
+    }
+
+    #services-tabs .tab-bg {
+        text-align: center;
+        padding: 40px 30px;
+    }
+
+    #services-tabs h2 {
+        font-size: 40px;
+    }
+
+    #services-tabs h3 {
+        font-size: 28px;
+    }
+
+    /*TESTIMONIAL*/
+    #testimonials {
+        padding-top: 45px;
+    }
+
+    #testimonial-slider {
+        top: 0;
+    }
+
+    #testimonials .vertical-heading {
+        padding: 0;
+    }
+
+    .testimonial h3 {
+        font-size: 20px;
+    }
+
+    .author img {
+        width: 80px !important;
+    }
+
+    .testimonial .row {
+        margin: 0;
+    }
+
+    /*UNISEC*/
+    .pricing-table .type h4 {
+        font-size: 20px;
+    }
+
+    .pricing-btn {
+        padding-top: 22px
+    }
+
+    .pricing-btn .btn {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .pricing-btn span.rupee {
+        font-size: 15px;
+    }
+
+    .pricing-btn span {
+        font-size: 15px;
+    }
+
+    .price h3 {
+        font-size: 20px;
+    }
+
+    .unisec-about p {
+        font-size: 17px;
+    }
+
+    .unisec-activities p {
+        font-size: 17px;
+        text-align: center;
+        padding-bottom: 0;
+    }
+
+    .unisec-activities h3 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .unisec-75-img h2 {
+        font-size: 28px;
+    }
+
+    .unisec-75-img p {
+        font-size: 17px;
+    }
+
+    .unisec-75-link p {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    /*BLOG*/
+    #blog-left {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .blog-post {
+        margin-bottom: 25px;
+    }
+
+    .blog-post .post-meta p {
+        line-height: 14px;
+    }
+
+    /*CONTACT*/
+    #contact-left {
+        text-align: center;
+    }
+
+    .office {
+        margin-bottom: 40px;
+    }
+
+    ul.office-details li {
+        display: block;
+        margin-top: 25px;
+    }
+
+    ul.office-details li i {
+        width: auto;
+        display: block;
+        margin-bottom: 3px;
+    }
+
+    ul.social-list {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /*HOME*/
+    #home-heading-1 {
+        font-size: 25px;
+    }
+
+    #home-heading-2 {
+        font-size: 25px;
+        margin-top: 10px;
+    }
+
+    #home-text p {
+        font-size: 18px;
+        line-height: 18px;
+        margin: 0 2px 30px 2px;
+    }
+
+    .vertical-heading h2 {
+        font-size: 25px;
+    }
+
+    /*TESTIMONIAL*/
+    .testimonial h3 {
+        font-size: 20px;
+        line-height: 18px;
+    }
+
+}
